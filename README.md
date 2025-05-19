@@ -11,8 +11,9 @@ Clean and modular Swift code
 
 🚀 Requirements
 
-iOS 16.2+
+iOS 16.2+,
 Xcode 16.2+
+
 Apple Developer Account (with Family Controls entitlement)
 
 ⚠️ Note
