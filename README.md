@@ -14,6 +14,10 @@ Clean and modular Swift code
 iOS 16.2+,
 Xcode 16.2+
 
+🚀 SDK
+FamilyControls
+DeviceActivity
+
 Apple Developer Account (with Family Controls entitlement)
 
 ⚠️ Note
