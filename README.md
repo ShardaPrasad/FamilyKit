@@ -17,8 +17,12 @@ Xcode 16.2+
 🚀 SDK
 FamilyControls,
 DeviceActivity
-
 Apple Developer Account (with Family Controls entitlement)
+
+🎥 Demo Video
+https://github.com/user-attachments/assets/28d3e452-c838-48e3-b86d-27f64a299e64
+
+
 
 ⚠️ Note
 This project is for educational/demo purposes only. Deployment to App Store requires proper entitlement requests via Apple Developer Program.
