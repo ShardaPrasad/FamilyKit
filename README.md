@@ -22,3 +22,8 @@ Apple Developer Account (with Family Controls entitlement)
 
 ⚠️ Note
 This project is for educational/demo purposes only. Deployment to App Store requires proper entitlement requests via Apple Developer Program.
+
+📧 Contact Me
+
+Email:shardaprasad111@gmail.com
+LinkedIn: https://www.linkedin.com/in/sharda-prasad-745a6617/
