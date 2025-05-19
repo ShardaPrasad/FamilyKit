@@ -15,7 +15,7 @@ iOS 16.2+,
 Xcode 16.2+
 
 🚀 SDK
-FamilyControls
+FamilyControls,
 DeviceActivity
 
 Apple Developer Account (with Family Controls entitlement)
