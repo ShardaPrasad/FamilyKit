@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WJv-pe-yL3">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FamilyKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gan-Ey-8HB">
+                                <rect key="frame" x="25" y="154" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="l1j-m0-xpz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To reproduce the issue: use the buttons below to grant screen time access, then navigate to the screen time report view." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvP-F3-Rbq">
+                                <rect key="frame" x="25" y="229" width="343" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="W8d-bY-mQ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2e-Fv-duZ">
+                                <rect key="frame" x="25" y="310" width="343" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="f7O-rL-mjv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="REQUEST SCREEN TIME">
+                                    <color key="titleColor" red="0.0" green="0.26274509800000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkFamilyKit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l8H-8A-k0o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJc-8a-5bg">
+                                <rect key="frame" x="25" y="407" width="343" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="EKt-Yb-CH3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="REPORT">
+                                    <color key="titleColor" red="0.0" green="0.26274509800000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Jz-TU-Z7p" kind="push" id="lUH-Uh-k3L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gan-Ey-8HB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="23o-UP-fW4"/>
+                            <constraint firstItem="IvP-F3-Rbq" firstAttribute="centerX" secondItem="gan-Ey-8HB" secondAttribute="centerX" id="5Hd-2S-ODG"/>
+                            <constraint firstItem="u2e-Fv-duZ" firstAttribute="trailing" secondItem="IvP-F3-Rbq" secondAttribute="trailing" id="Akc-jj-3Eg"/>
+                            <constraint firstItem="gan-Ey-8HB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Cvq-Vu-uZe"/>
+                            <constraint firstItem="IvP-F3-Rbq" firstAttribute="trailing" secondItem="gan-Ey-8HB" secondAttribute="trailing" id="GzH-0Y-JUU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gan-Ey-8HB" secondAttribute="trailing" constant="25" id="Sqc-Ql-3pD"/>
+                            <constraint firstItem="u2e-Fv-duZ" firstAttribute="leading" secondItem="IvP-F3-Rbq" secondAttribute="leading" id="VQx-sl-S9H"/>
+                            <constraint firstItem="eJc-8a-5bg" firstAttribute="top" secondItem="u2e-Fv-duZ" secondAttribute="bottom" constant="59" id="VRa-3r-w5d"/>
+                            <constraint firstItem="eJc-8a-5bg" firstAttribute="leading" secondItem="u2e-Fv-duZ" secondAttribute="leading" id="VRl-uh-ulm"/>
+                            <constraint firstItem="eJc-8a-5bg" firstAttribute="trailing" secondItem="u2e-Fv-duZ" secondAttribute="trailing" id="bds-eF-0e7"/>
+                            <constraint firstItem="IvP-F3-Rbq" firstAttribute="top" secondItem="gan-Ey-8HB" secondAttribute="bottom" constant="20" id="fRX-iJ-iAw"/>
+                            <constraint firstItem="gan-Ey-8HB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ipO-HZ-cZ5"/>
+                            <constraint firstItem="u2e-Fv-duZ" firstAttribute="top" secondItem="IvP-F3-Rbq" secondAttribute="bottom" constant="20" id="pOS-qT-O8E"/>
+                            <constraint firstItem="IvP-F3-Rbq" firstAttribute="leading" secondItem="gan-Ey-8HB" secondAttribute="leading" id="zj8-T1-6Ya"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fNN-oa-8yS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677.0992366412213" y="-27.464788732394368"/>
+        </scene>
+        <!--Screen Time ReportVC-->
+        <scene sceneID="JVN-or-y66">
+            <objects>
+                <viewController storyboardIdentifier="ScreenTimeReportVC" id="6Jz-TU-Z7p" customClass="ScreenTimeReportVC" customModule="FamilyKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gAb-rC-Pqi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="J05-UF-ca2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XcO-eE-0az"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiK-sR-AeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qvh-U2-OBh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WJv-pe-yL3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="137-Tn-hyi">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nhi-t2-5YO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXe-6O-wrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-248.09160305343511" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
