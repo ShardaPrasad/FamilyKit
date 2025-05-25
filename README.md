@@ -11,7 +11,7 @@ Clean and modular Swift code
 
 🚀 Requirements
 
-iOS 16.2+,
+iOS 14.2+,
 Xcode 16.2+
 
 🚀 SDK
